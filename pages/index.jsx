@@ -8,7 +8,7 @@ export default function Home() {
   const [renID, setRenID] = useState(null);
 
   function fetchDataPost(value, value2) {
-    fetch("https://simple-notes-app-mu.vercel.app/api/server", {
+    fetch("https://gleeful-douhua-45e8fb.netlify.app/api/server", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    fetch("https://simple-notes-app-mu.vercel.app/api/server", {
+    fetch("https://gleeful-douhua-45e8fb.netlify.app/api/server", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Home() {
   }
 
   function handlerDelete(id) {
-    fetch(`https://simple-notes-app-mu.vercel.app/api/server?id=${id}`, {
+    fetch(`https://gleeful-douhua-45e8fb.netlify.app/api/server?id=${id}`, {
       method: "DELETE",
     })
       .then((res) => {
@@ -65,7 +65,7 @@ export default function Home() {
   }
 
   function fetchDataUpdate(value, value2, id) {
-    fetch(`https://simple-notes-app-mu.vercel.app/api/server?id=${id}`, {
+    fetch(`https://gleeful-douhua-45e8fb.netlify.app/api/server?id=${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
