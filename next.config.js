@@ -1,33 +1,28 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
-
-module.exports = nextConfig;
-
+/**
+ * @type {import('next').NextConfig}
+ */
 module.exports = {
+  images: {
+    domains: ["images.unsplash.com"],
+  },
   async headers() {
     return [
       {
         source: "/api/:path*",
         headers: [
+          { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
           {
             key: "Access-Control-Allow-Methods",
-            value: "OPTIONS,DELETE,GET,PUT,POST,PATCH",
-          },
-          {
-            key: "Access-Control-Expose-Headers",
-            value: "X-Total-Count, Content-Range",
+            value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
           },
           {
             key: "Access-Control-Allow-Headers",
             value:
-              "Origin, X-Requested-With, Content-Type, Accept, Range, Authorization",
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
           },
         ],
       },
     ];
   },
 };
-
