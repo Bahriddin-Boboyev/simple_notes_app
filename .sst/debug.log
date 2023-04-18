@@ -1,0 +1,6 @@
+2023-04-17T18:43:55.050Z +145660ms [debug] Config loaded {"version":"2.0.0-rc.71","cdkVersion":"2.62.2","config":{"name":"my-app","region":"us-east-1","stage":"User","ssmPrefix":"/sst/my-app/User/"},"metafile":{"inputs":{"sst.config.js":{"bytes":261,"imports":[{"path":"sst/constructs","kind":"import-statement","external":true},{"path":"<runtime>","kind":"import-statement","external":true}]}},"outputs":{".sst.config.1681756915896.mjs":{"imports":[{"path":"sst/constructs","kind":"import-statement","external":true}],"exports":["default"],"entryPoint":"sst.config.js","inputs":{"sst.config.js":{"bytesInOutput":291}},"bytes":1489}}},"paths":{"config":"D:\\darslar\\Najot-talim\\BackEnd\\1-oy\\10-dars\\uyga-vazifa-2\\sst.config.js","root":"D:\\darslar\\Najot-talim\\BackEnd\\1-oy\\10-dars\\uyga-vazifa-2","out":"D:\\darslar\\Najot-talim\\BackEnd\\1-oy\\10-dars\\uyga-vazifa-2\\.sst","artifacts":"D:\\darslar\\Najot-talim\\BackEnd\\1-oy\\10-dars\\uyga-vazifa-2\\.sst\\artifacts"}}
+2023-04-17T18:44:02.905Z  +7855ms [debug] Using AWS profile 
+2023-04-17T18:44:04.266Z  +1361ms [debug] Created AWS client STSClient
+2023-04-17T18:44:04.274Z     +8ms [debug] Fetching app metadata
+2023-04-17T18:44:04.275Z     +1ms [debug] Initializing bootstrap context
+2023-04-17T18:44:04.278Z     +3ms [debug] Created AWS client CloudFormationClient
