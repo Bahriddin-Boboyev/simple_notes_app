@@ -2,6 +2,7 @@
  * @type {import('next').NextConfig}
  */
 module.exports = {
+  target: "serverless",
   output: "standalone",
   images: {
     domains: ["images.unsplash.com"],
